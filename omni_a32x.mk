@@ -29,10 +29,14 @@ $(call inherit-product, device/samsung/a32x/device.mk)
 $(call inherit-product, vendor/omni/config/common.mk)
 $(call inherit-product, vendor/omni/config/gsm.mk)
 
+
+# Inherit common pb recovery product files.
+$(call inherit-product, vendor/pb/config/common.mk)
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := a32x
 PRODUCT_NAME := omni_a32x
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := samsung
 PRODUCT_MANUFACTURER := samsung
-PRODUCT_RELEASE_NAME := samsung samsung
+PRODUCT_RELEASE_NAME := samsung a32x
