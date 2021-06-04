@@ -8,6 +8,9 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from a32x device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+# Inherit from a32x device tree vendorprops
+$(call inherit-product, $(LOCAL_PATH)/vendor_prop.mk)
+
 PRODUCT_BRAND := samsung
 PRODUCT_DEVICE := a32x
 PRODUCT_MANUFACTURER := samsung
